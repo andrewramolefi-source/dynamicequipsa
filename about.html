@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Dynamic Equip SA (DESA)</title>
+    
+    <!-- Open Graph for WhatsApp Optimization -->
+    <meta property="og:title" content="About Dynamic Equip SA - Global Mining Excellence">
+    <meta property="og:description" content="100% Black Owned. Leading the technological frontier in mining equipment across the SADC region and beyond.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1579546673283-9e81a0a13ea8?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+        
+        :root {
+            --primary: #ff6b00;
+            --dark: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        .hero-inner {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1516939884455-1445c8652f83?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .industrial-border {
+            border-left: 4px solid var(--primary);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Consistent Glass Background for Nav and Footer */
+        .nav-glass {
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav-glass text-white py-4 px-6 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Adjusted Logo with Link -->
+            <a href="index.html" class="flex items-center gap-4 group">
+                <div class="relative overflow-hidden rounded-lg shadow-sm border border-white/10 bg-white p-1">
+                    <img src="https://res.cloudinary.com/dykgraurr/image/upload/Logo_rp7ypk" alt="Logo" class="h-10 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.parentElement.style.display='none'">
+                </div>
+                <div class="text-xl font-800 tracking-tighter flex flex-col leading-none">
+                    <span class="text-white">DYNAMIC EQUIP</span>
+                    <span class="text-[#ff6b00] text-[10px] tracking-[0.2em]">SA (DESA)</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex gap-8 font-semibold text-sm uppercase tracking-widest">
+                <a href="index.html" class="hover:text-[#ff6b00] transition-colors">Home</a>
+                <a href="index.html#products" class="hover:text-[#ff6b00] transition-colors">Products</a>
+                <a href="index.html#contact" class="hover:text-[#ff6b00] transition-colors">Contact</a>
+            </div>
+
+            <button class="md:hidden text-2xl" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileOverlay" class="fixed inset-0 bg-black z-[60] flex flex-col items-center justify-center gap-8 text-white text-2xl hidden transition-all">
+        <button class="absolute top-8 right-8 text-4xl" id="closeMenu">&times;</button>
+        <a href="index.html" class="menu-link">Home</a>
+        <a href="index.html#products" class="menu-link">Products</a>
+        <a href="index.html#contact" class="menu-link">Contact</a>
+    </div>
+
+    <!-- Header Section -->
+    <header class="hero-inner pt-48 pb-32 px-6 text-center text-white">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-[#ff6b00] font-bold tracking-[0.3em] uppercase mb-4 block">Our Identity</span>
+            <h1 class="text-4xl md:text-6xl font-800 mb-6">Empowering the <br>SADC Mining Region</h1>
+            <p class="text-xl text-gray-300">100% Black Owned. Quality Driven. Globally Competitive.</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <main class="py-24 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
+            
+            <!-- Left Column: Narrative -->
+            <div class="space-y-12 fade-in">
+                <div class="industrial-border pl-6">
+                    <h2 class="text-3xl font-800 mb-4 uppercase tracking-tight">Who We Are</h2>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Dynamic Equip SA (DESA) is a 100% black owned company which prides itself in quality and service. We specialize in sourcing and supplying high-grade mining equipment to the SADC Region, as well as local and international markets.
+                    </p>
+                </div>
+                
+                <p class="text-gray-600 leading-relaxed">
+                    We deliver mining products and machinery that help our customers streamline their operations, improve process efficiency, and minimize downtime. Our goal is simple: reduce costs while maximizing performance through engineering excellence.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 card-hover">
+                        <h3 class="font-bold text-[#ff6b00] uppercase tracking-widest text-xs mb-3">The Expertise</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed italic">
+                            "Our managing Director, Sibusiso Ndimande has 16 years experience in the Mining Sector, accumulating the necessary knowledge required to assist our clients in making informed, value-driven decisions."
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 card-hover">
+                        <h4 class="font-bold text-[#ff6b00] uppercase tracking-widest text-xs mb-3">Quality Management</h4>
+                        <p class="text-gray-700 text-sm leading-relaxed italic">
+                            "We exclusively source products that carry the South African Bureau Of Standards (SABS) stamp of approval and meet Original Equipment Manufacturer (OEM) specifications."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 card-hover">
+                    <h5 class="font-bold text-[#ff6b00] uppercase tracking-widest text-xs mb-3">Time Management</h5>
+                    <p class="text-gray-700 text-sm leading-relaxed italic">
+                        "We have strict time management controls in place, including progress reports and clearly defined milestones. At DESA, we understand the direct impact that precision time-keeping has on business efficiency."
+                    </p>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-2xl text-white card-hover">
+                    <h5 class="font-bold text-[#ff6b00] uppercase tracking-widest text-xs mb-3">The Global Frontier</h5>
+                    <p class="text-gray-300 text-sm leading-relaxed italic">
+                        "South Africa has a significant cluster of firms in mining equipment which are at the global technological frontier. Dynamic Equip SA is proud to be part of this leading industrial activity. Our understanding of legislative requirements ensures that all exports have low cycle times without delays."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column: Visuals & Highlights -->
+            <div class="grid grid-cols-1 gap-8 fade-in delay-200 lg:sticky lg:top-32">
+                <div class="relative group overflow-hidden rounded-2xl shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80&w=800" alt="Mining Equipment" class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <div class="text-xs uppercase tracking-widest font-bold text-[#ff6b00] mb-1">Operational Excellence</div>
+                        <div class="text-xl font-bold">Reliable Mining Solutions</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-dark text-white p-8 rounded-2xl text-center flex flex-col items-center justify-center card-hover">
+                        <div class="text-[#ff6b00] text-4xl mb-3"><i class="fas fa-globe-africa"></i></div>
+                        <div class="font-bold text-sm uppercase tracking-wider">SADC Focused</div>
+                    </div>
+                    <div class="bg-dark text-white p-8 rounded-2xl text-center flex flex-col items-center justify-center card-hover">
+                        <div class="text-[#ff6b00] text-4xl mb-3"><i class="fas fa-certificate"></i></div>
+                        <div class="font-bold text-sm uppercase tracking-wider">B-BBEE Level 1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Network Section -->
+    <section class="bg-slate-50 py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h2 class="text-3xl font-800 mb-8 uppercase tracking-tight">Global Manufacturer Network</h2>
+            <p class="text-gray-600 text-lg mb-12 leading-relaxed">
+                The founding members of Dynamic Equip SA (PTY) Ltd. embarked on this journey with a clear vision: to become a key economic participant in the SADC region. We have created a reliable network of mining equipment manufacturers to ensure our customers have access to a wide range of quality products and brands.
+            </p>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="group">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-[#ff6b00] group-hover:text-white transition-all">
+                        <i class="fas fa-handshake text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold uppercase text-sm tracking-widest">Reliable Sourcing</h4>
+                </div>
+                <div class="group">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-[#ff6b00] group-hover:text-white transition-all">
+                        <i class="fas fa-microchip text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold uppercase text-sm tracking-widest">Tech Frontier</h4>
+                </div>
+                <div class="group">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-[#ff6b00] group-hover:text-white transition-all">
+                        <i class="fas fa-shipping-fast text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold uppercase text-sm tracking-widest">Timely Delivery</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-6 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-800 mb-6 uppercase tracking-tight">Ready to Streamline Your Operations?</h2>
+            <p class="text-gray-500 mb-8">Partner with a company that understands the technological demands of modern mining.</p>
+        </div>
+    </section>
+
+    <!-- Footer: Updated to nav-glass background -->
+    <footer id="contact" class="nav-glass text-white pt-20 pb-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Column 1: Identity -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex flex-col gap-6 mb-6">
+                        <div class="inline-block self-start overflow-hidden rounded-lg shadow-sm border border-white/10 bg-white p-1.5 w-fit">
+                            <img src="https://res.cloudinary.com/dykgraurr/image/upload/Logo_rp7ypk" alt="Dynamic Equip SA Logo" class="h-12 w-auto object-contain">
+                        </div>
+                        <div class="text-2xl font-800 tracking-tighter">
+                            <span class="text-[#ff6b00] uppercase">DYNAMIC EQUIP</span>
+                            <span class="text-[#ff6b00] text-[10px] tracking-[0.2em]">SA (DESA)</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Pride in Service & Quality. Your Trusted Partner in Mining Solutions.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="font-bold mb-6 uppercase tracking-widest text-sm text-[#ff6b00]">Quick Links</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a href="index.html#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#products" class="hover:text-white transition-colors">Products Catalog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold mb-6 uppercase tracking-widest text-sm text-[#ff6b00]">Head Office</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex gap-3">
+                            <i class="fas fa-map-marker-alt text-[#ff6b00] mt-1"></i>
+                            <span>02 Brigadier Street, Unigary, 2197 <br>Gauteng, South Africa</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-phone-alt text-[#ff6b00]"></i>
+                            <span>+27 11 068 4238</span>
+                        </li>
+                         <li class="flex items-center gap-3 md:col-span-2">
+                            <i class="fas fa-envelope text-[#ff6b00]"></i>
+                            <a href="mailto:sales@dynamicequip.co.za" class="hover:text-white transition-colors font-semibold">sales@dynamicequip.co.za</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-xs">
+                <p>&copy; 2026 Dynamic Equip SA (Pty) Ltd. All Rights Reserved. Designed by A.Ramolefi </p>
+                <div class="flex gap-8 uppercase tracking-widest">
+            </p>
+            <div class="mt-2 text-[10px] text-slate-700 uppercase tracking-[0.2em]">
+                Designed by A.Ramolefi | Powered by Tailwind CSS
+            </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobileMenuBtn');
+        const overlay = document.getElementById('mobileOverlay');
+        const closeBtn = document.getElementById('closeMenu');
+
+        menuBtn?.addEventListener('click', () => overlay?.classList.remove('hidden'));
+        closeBtn?.addEventListener('click', () => overlay?.classList.add('hidden'));
+        document.querySelectorAll('.menu-link').forEach(l => l.addEventListener('click', () => overlay?.classList.add('hidden')));
+    </script>
+</body>
+</html>
